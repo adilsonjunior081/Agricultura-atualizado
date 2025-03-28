@@ -1,0 +1,63 @@
+# robots.txt para Agricultura de Gravatá
+# https://agricultura.gravata.pe.gov.br/
+# Última atualização: 2024
+
+# Regras para todos os robôs
+User-agent: *
+
+# Permitir acesso às páginas principais
+Allow: /
+Allow: /index.html
+Allow: /abacaxi.html
+Allow: /banana.html
+Allow: /cara.html
+Allow: /chuchu.html
+Allow: /flores.html
+Allow: /goiaba.html
+Allow: /organicos.html
+Allow: /style.css
+Allow: /responsive.css
+Allow: /main.js
+Allow: /charts.js
+Allow: /favicon.ico
+
+# Proteger arquivos sensíveis
+Disallow: /.htaccess
+Disallow: /.htpasswd
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/themes/
+Disallow: /trackback/
+Disallow: /comments/
+Disallow: /category/
+Disallow: /author/
+Disallow: /tag/
+Disallow: /?feed=
+Disallow: /?s=
+Disallow: /search/
+Disallow: /page/
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+
+# Arquivos de sistema
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.env.*
+Disallow: /config.php
+Disallow: /error_log
+Disallow: /debug.log
+
+# Disallow offline page
+Disallow: /offline.html
+
+# Não rastrear arquivos temporários
+Disallow: /*.tmp$
+Disallow: /*.bak$
+
+# Sitemap
+Sitemap: https://agricultura.gravata.pe.gov.br/sitemap.xml
+
+# Tempo de espera entre requisições (opcional)
+Crawl-delay: 10 
